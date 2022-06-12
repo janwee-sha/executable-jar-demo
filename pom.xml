@@ -135,13 +135,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.0</version>
                 <executions>
                     <execution>
                         <goals>
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <classifier>executable</classifier>
+                            <finalName>executable-jar</finalName>
                             <mainClass>com.janwee.executablejardemo.Main</mainClass>
                         </configuration>
                     </execution>
